@@ -18,7 +18,7 @@ set(SOURCE_FILES
 #    Lib/src/stm32f10x_adc.c
 #    Lib/src/stm32f10x_bkp.c
     Lib/src/stm32f10x_can.c
-#    Lib/src/stm32f10x_cec.c
+#    Lib/src/stm32f10x_cec.cl
 #    Lib/src/stm32f10x_crc.c
 #    Lib/src/stm32f10x_dac.c
 #    Lib/src/stm32f10x_dbgmcu.c
@@ -48,8 +48,7 @@ set(SOURCE_FILES
         )
 
 
-#add_definitions(-DDEBUG )
-
+add_definitions(-DDEBUG )
 
 add_executable(${PROJECT_NAME}.elf ${SOURCE_FILES} ${LINKER_SCRIPT})
 
